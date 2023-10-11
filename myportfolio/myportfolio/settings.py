@@ -23,14 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
-# SECRET_KEY = 'django-insecure-z_26vq+s=i%&(epm9s#37xk#fj^+yscpkn$^+2$a8xi$y)odj2'
+SECRET_KEY = 'django-insecure-z_26vq+s=i%&(epm9s#37xk#fj^+yscpkn$^+2$a8xi$y)odj2'
 
-DEBUG = os.environ['DEBUG'] == 'True'
+DEBUG = False
 
-ALLOWED_HOSTS = [
-    'nagatac.pythonanywhere.com'
-]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -62,6 +59,7 @@ MIDDLEWARE = [
 # Allow requests from your frontend domain
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # or your frontend’s deployed domain
+    "https://portfolio-website-iota-teal.vercel.app"
 ]
 
 ROOT_URLCONF = 'myportfolio.urls'
