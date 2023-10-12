@@ -1,0 +1,43 @@
+/* src/styles.css */
+.navbar-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar-centered .navbar-brand {
+  font-size: 2rem !important; /* Adjust size as necessary */
+}
+
+body, #root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex-grow: 1;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* This will center content vertically */
+  padding: 2rem;  /* This adds padding around the content */
+}
+
+.home-content {
+  text-align: center;
+}
