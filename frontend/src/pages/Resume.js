@@ -5,9 +5,9 @@ function Resume() {
         <div className="container">
             <h1>Resume</h1>
             <p>
-                Brief overview of your resume...
+                Here is my resume...
             </p>
-            <a href="[Your_Resume_Link]" download className="btn btn-primary">
+            <a href="/docs/resume.pdf" download className="btn btn-primary">
                 Download My Resume
             </a>
         </div>

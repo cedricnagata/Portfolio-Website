@@ -4,8 +4,8 @@ function Contact() {
     return (
         <div className="container">
             <h1>Contact Me</h1>
-            <p>You can reach me via email at <a href="mailto:cedric.nagata@gmail.com">cedric.nagata@gmail.com</a></p>
-            {/* Add a contact form or other contact details if desired */}
+            <p>Email: <a href="mailto:cedric.nagata@gmail.com">cedric.nagata@gmail.com</a></p>
+            <p>Phone: <a href="tel:425-691-7180">425-691-7180</a></p>
         </div>
     );
 }

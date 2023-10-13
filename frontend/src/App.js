@@ -7,12 +7,14 @@ import About from './pages/About';
 import Resume from './pages/Resume';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import BackgroundSlideshow from './components/BackgroundSlideshow';
 import './styles.css';
 
 const App = () => (
   <Router>
     <div className="app-container">
         <Header />
+        <BackgroundSlideshow />
         <div className="content-container">
             <Routes>
                 <Route path="/" element={<Home />} />

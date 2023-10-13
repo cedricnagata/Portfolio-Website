@@ -4,8 +4,8 @@ import '../styles.css';  // Ensure styles.css is imported
 
 const Home = () => (
     <div className="home-content">
-        <h1>Hello! Welcome to My Portfolio</h1>
-        <p>I am a Computer Science student at the University of Washington.</p>
+        <h1>Hello! My Name is Cedric.</h1>
+        <p>Welcome to My Portfolio</p>
     </div>
 );
 
