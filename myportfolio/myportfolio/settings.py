@@ -60,6 +60,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # or your frontend’s deployed domain
     "https://portfolio-website-iota-teal.vercel.app"
+    "https://cedricnagata.com"
 ]
 
 ROOT_URLCONF = 'myportfolio.urls'
