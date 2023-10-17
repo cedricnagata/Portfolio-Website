@@ -2,7 +2,7 @@ let backendHost;
 
 const hostname = window && window.location && window.location.hostname;
 
-if(hostname === 'portfolio-website-iota-teal.vercel.app') {
+if(hostname === 'portfolio-website-iota-teal.vercel.app' || hostname === 'www.cedricnagata.com') {
   backendHost = 'https://nagatac.pythonanywhere.com';
 } else {
   backendHost = 'http://localhost:8000';
