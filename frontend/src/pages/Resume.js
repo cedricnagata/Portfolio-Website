@@ -4,12 +4,14 @@ function Resume() {
     return (
         <div className="container">
             <h1>Resume</h1>
-            <p>
-                Here is my resume...
-            </p>
-            <a href="/docs/resume.pdf" download className="btn btn-primary">
-                Download My Resume
-            </a>
+            <div className="resume-page">
+                <div className="resume-content">
+                    <img src="/images/resume.jpg" alt="My Resume" className="centered-resume" />
+                    <a href="/docs/resume.pdf" download className="btn btn-primary">
+                        Download My Resume
+                    </a>
+                </div>
+            </div>           
         </div>
     );
 }

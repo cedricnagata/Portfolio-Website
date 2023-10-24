@@ -23,15 +23,17 @@ function Projects() {
         <div className="container">
             <h1>Projects</h1>
             {error && <p>{error.message}</p>}
-            <ul className="list-group">
+            <div className="projects-grid">
                 {projects.map((project) => (
-                    <li key={project.id} className="list-group-item">
-                        <a href={project.html_url} target="_blank" rel="noopener noreferrer">
-                            {project.name}
-                        </a>: {project.description}
-                    </li>
+                    <div key={project.id} className="project-card">
+                        <h2>{project.name}</h2>
+                        <p>{project.description}</p>
+                        <a href={project.html_url} target="_blank" rel="noopener noreferrer" className="project-link">
+                            View on GitHub
+                        </a>
+                    </div>
                 ))}
-            </ul>
+            </div>
         </div>
     );
 }
