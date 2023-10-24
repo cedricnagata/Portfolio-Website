@@ -183,8 +183,6 @@ body, #root {
 /********CONTACT********/
 
 .page-title {
-  font-size: 2rem; /* Adjust size as necessary */
-  margin-top: 40px; /* Adjust top margin to position the title correctly */
   margin-bottom: 20px; /* Space below the title */
   text-align: center;
 }
@@ -193,7 +191,6 @@ body, #root {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
 }
 
 .input-group {
