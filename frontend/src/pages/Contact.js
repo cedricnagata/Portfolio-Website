@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { API_BASE_URL } from '../config';
 
 function Contact() {
     const [name, setName] = useState('');
@@ -21,7 +22,8 @@ function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('/api/send-email/', {
+            const apiUrl = `${API_BASE_URL}/api/send-email/`; // Your API URL
+            const response = await axios.post(apiUrl, {
                 name: name,
                 email: email,
                 message: message
