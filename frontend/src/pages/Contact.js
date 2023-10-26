@@ -23,7 +23,7 @@ function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const apiUrl = `${API_BASE_URL}/api/send-email/`; // Your API URL
+            const apiUrl = `${API_BASE_URL}/api/send-email/`;
             const response = await axios.post(apiUrl, {
                 name: name,
                 email: email,
@@ -41,7 +41,6 @@ function Contact() {
         <div className="contact-container">
             <h1 className="page-title">Contact Me</h1>
             
-            {/* Contact Form */}
             <div className="contact-form-wrapper">
                 <form className="contact-form" onSubmit={handleSubmit}>
                     <div className="input-group">
@@ -56,14 +55,12 @@ function Contact() {
                     <button type="submit">Send Message</button>
                 </form>
             </div>
-            
-            {/* Contact Details with Icons */}
+
             <div className="contact-details">
                 <p><i className="fas fa-envelope"></i> <a href="mailto:cedric.nagata@gmail.com">cedric.nagata@gmail.com</a></p>
                 <p><i className="fas fa-phone"></i> <a href="tel:425-691-7180">425-691-7180</a></p>
             </div>
             
-            {/* Social Media Links */}
             <div className="social-links">
                 <a href="https://github.com/cedricnagata" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/cedric-nagata/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>

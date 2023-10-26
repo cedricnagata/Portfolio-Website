@@ -8,7 +8,7 @@ function Projects() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        const apiUrl = `${API_BASE_URL}/api/github-repos/`; // Your API URL
+        const apiUrl = `${API_BASE_URL}/api/github-repos/`;
 
         axios.get(apiUrl)
             .then((response) => {
