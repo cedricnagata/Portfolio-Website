@@ -1,0 +1,25 @@
+.resume-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top: 80px; /* Adjust this value to provide space below the navbar and title */
+}
+  
+.resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px; /* Spacing between the title and the resume */
+}
+  
+.centered-resume {
+    max-width: 90%;
+    max-height: 80%;
+    margin-bottom: 20px; /* Spacing between the image and the button */
+}
+  
+.btn {
+    text-align: center;
+    margin-top: 20px; /* Spacing between the image and the button */
+}

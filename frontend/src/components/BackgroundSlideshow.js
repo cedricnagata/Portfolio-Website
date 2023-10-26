@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { useLocation } from 'react-router-dom';
+import './styles/BackgroundSlideshow.css'
 
 const images = [
   '/images/background_2.jpg',

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles.css';  // Import the CSS file
+import './styles/General.css';  // Import the CSS file
 
 const Footer = () => (
   <footer className="text-center mt-4 footer">

@@ -8,7 +8,9 @@ import Resume from './pages/Resume';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import BackgroundSlideshow from './components/BackgroundSlideshow';
-import './styles.css';
+
+import './components/styles/General.css';
+import './components/styles/NavBar.css';
 
 const App = () => (
   <Router>
