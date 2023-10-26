@@ -28,7 +28,7 @@ def send_contact_email(request):
 
         # Send email
         subject = 'New Contact Request from ' + form.cleaned_data['name']
-        message = form.cleaned_data['message']
+        message = form.cleaned_data['message'] + "\n\nSender's Email: " + form.cleaned_data['email']
         from_email = form.cleaned_data['email']
         recipient_list = ['cedric.nagata@gmail.com']
         send_mail(subject, message, from_email, recipient_list)

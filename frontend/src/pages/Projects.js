@@ -7,11 +7,23 @@ function Projects() {
     const [projects, setProjects] = useState([]);
     const [error, setError] = useState(null);
 
+    const order = [
+        "Portfolio-Website", 
+        "Flight-Service-App", 
+        "UW-Campus-Routefinder",
+        "Multithreaded-Web-Based-Search-Engine",
+        "U.S.-Population-Matrix",
+        "Artificial-Intelligence-and-Machine-Learning",
+        "News-Web-App",
+    ];
+
     useEffect(() => {
         const apiUrl = `${API_BASE_URL}/api/github-repos/`;
 
         axios.get(apiUrl)
             .then((response) => {
+                let fetchedProjects = response.data;
+                fetchedProjects.sort((a, b) => order.indexOf(a.name) - order.indexOf(b.name));
                 setProjects(response.data);
             })
             .catch((error) => {
