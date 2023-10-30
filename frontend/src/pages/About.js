@@ -18,7 +18,7 @@ function About() {
                 <p>I had the privilege of interning at <strong>Tyler Technologies, Inc</strong> 
                     during the summers of 2022 and 2023. As a software engineering intern, I:</p>
                 <ul>
-                    <li>Created an high-speed search functionality using Elasticsearch and Form.io that
+                    <li>Created a high-speed search functionality using Elasticsearch and Form.io that
                         processes thousands of data entries from across the country
                     </li>
                     <li>Created a secure form sharing functionality using UUID, Django Admin functionality, 
