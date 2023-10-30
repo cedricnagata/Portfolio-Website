@@ -21,7 +21,7 @@ function About() {
                     <li>Created a high-speed search functionality using Elasticsearch and Form.io that
                         processes thousands of data entries from across the country
                     </li>
-                    <li>Created a secure form sharing functionality using UUID, Django Admin functionality, 
+                    <li>Created a secure form sharing functionality using UUID, Django Admin, 
                         and Form.io.
                     </li>
                     <li>Used Docker to create a local development environment for a large-scale project, 
