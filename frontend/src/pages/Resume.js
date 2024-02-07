@@ -6,8 +6,8 @@ function Resume() {
         <div className="container">
             <h1>Resume</h1>
             <div className="resume-content">
-                <img src="/images/resume_tyler.jpg" alt="My Resume" className="centered-resume" />
-                <a href="/docs/resume_tyler.pdf" download className="btn btn-primary">
+                <img src="/images/cedric_nagata_resume.jpg" alt="My Resume" className="centered-resume" />
+                <a href="/docs/cedric_nagata_resume.pdf" download className="btn btn-primary">
                     Download My Resume
                 </a>
             </div>           
