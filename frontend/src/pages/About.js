@@ -25,10 +25,10 @@ function About() {
                         and Form.io.
                     </li>
                     <li>Used Docker to create a local development environment for a large-scale project, 
-                        creating connected images for Django, Form.io, Elasticsearch, and PostgreSQL 
+                        creating connected images for Django, Form.io, Elasticsearch, and MySQL 
                         within the container.
                     </li>
-                    <li>Enhanced my Python, Javascript, and HTML/CSS skills</li>
+                    <li>Enhanced my Python, JavaScript, and HTML/CSS skills</li>
                 </ul>
                 <p>These experiences not only honed my technical skills but also provided a glimpse 
                     into the collaborative and innovative nature of the tech world.</p>
