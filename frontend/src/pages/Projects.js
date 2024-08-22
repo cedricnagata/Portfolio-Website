@@ -17,7 +17,9 @@ function Projects() {
         "News-Web-App",
     ];
 
+    
     useEffect(() => {
+        /*
         const apiUrl = `${API_BASE_URL}/api/github-repos/`;
 
         axios.get(apiUrl)
@@ -30,7 +32,26 @@ function Projects() {
                 console.error("Error fetching data: ", error);
                 setError(error);
             });
+        */
+
+        const fetchProjects = async () => {
+            try {
+                const response = await axios.get('https://api.github.com/users/cedricnagata/repos');
+                let fetchedProjects = response.data;
+
+                // Sort the projects based on the defined order
+                fetchedProjects.sort((a, b) => order.indexOf(a.name) - order.indexOf(b.name));
+
+                setProjects(fetchedProjects);
+            } catch (error) {
+                console.error("Error fetching data: ", error);
+                setError(error);
+            }
+        };
+
+        fetchProjects();
     }, []);
+
 
     return (
         <div className="container">
