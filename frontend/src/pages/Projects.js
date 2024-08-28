@@ -8,32 +8,18 @@ function Projects() {
     const [error, setError] = useState(null);
 
     const order = [
+        "derm_dx",
+        "skin_lesion_classifier",
+        "anger-translator",
         "Portfolio-Website", 
-        "Flight-Service-App", 
         "UW-Campus-Routefinder",
-        "Multithreaded-Web-Based-Search-Engine",
-        "U.S.-Population-Matrix",
+        "Multithreaded-Web-Based-Search-Engine", 
+        "Flight-Service-App", 
         "Artificial-Intelligence-and-Machine-Learning",
-        "News-Web-App",
     ];
 
     
     useEffect(() => {
-        /*
-        const apiUrl = `${API_BASE_URL}/api/github-repos/`;
-
-        axios.get(apiUrl)
-            .then((response) => {
-                let fetchedProjects = response.data;
-                fetchedProjects.sort((a, b) => order.indexOf(a.name) - order.indexOf(b.name));
-                setProjects(response.data);
-            })
-            .catch((error) => {
-                console.error("Error fetching data: ", error);
-                setError(error);
-            });
-        */
-
         const fetchProjects = async () => {
             try {
                 const response = await axios.get('https://api.github.com/users/cedricnagata/repos');
