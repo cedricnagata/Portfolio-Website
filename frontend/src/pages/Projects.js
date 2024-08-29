@@ -12,10 +12,10 @@ function Projects() {
         "skin_lesion_classifier",
         "anger-translator",
         "Portfolio-Website", 
+        "kalah-ai-player",
         "UW-Campus-Routefinder",
         "Multithreaded-Web-Based-Search-Engine", 
         "Flight-Service-App", 
-        "Artificial-Intelligence-and-Machine-Learning",
     ];
 
     
